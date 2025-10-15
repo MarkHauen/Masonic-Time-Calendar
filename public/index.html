@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonic Time Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-symbols"></div>
+    
+    <div class="container">
+        <header class="main-header">
+            <div class="symbol-container">
+                <div class="square-compass">
+                    <svg viewBox="0 0 100 100" class="masonic-symbol">
+                        <!-- Square -->
+                        <path d="M 30 70 L 30 30 L 70 30" stroke="#d4af37" stroke-width="2" fill="none"/>
+                        <!-- Compass -->
+                        <path d="M 50 20 L 35 70 M 50 20 L 65 70" stroke="#d4af37" stroke-width="2" fill="none"/>
+                        <!-- G in center -->
+                        <text x="50" y="55" text-anchor="middle" fill="#d4af37" font-size="20" font-family="serif" font-weight="bold">G</text>
+                    </svg>
+                </div>
+            </div>
+            <h1 class="main-title">
+                <span class="title-line">Masonic Time Portal</span>
+                <span class="subtitle">Tempus Fugit, Lux Manet</span>
+            </h1>
+            <div class="all-seeing-eye">
+                <svg viewBox="0 0 100 100">
+                    <path d="M 50 30 L 20 70 L 80 70 Z" stroke="#d4af37" stroke-width="2" fill="none"/>
+                    <circle cx="50" cy="55" r="12" stroke="#d4af37" stroke-width="1.5" fill="none"/>
+                    <circle cx="50" cy="55" r="5" fill="#d4af37"/>
+                </svg>
+            </div>
+        </header>
+
+        <!-- Current Gregorian Time -->
+        <div class="gregorian-time card">
+            <h2>Current Gregorian Time</h2>
+            <div class="time-display">
+                <div class="main-time" id="gregorianTime">--:--:--</div>
+                <div class="date-display" id="gregorianDate">Loading...</div>
+            </div>
+        </div>
+
+        <!-- Masonic Calendar Grid -->
+        <div class="masonic-calendars">
+            <div class="calendar-card card" data-calendar="AL">
+                <div class="card-header">
+                    <span class="calendar-symbol">☀️</span>
+                    <h3>Anno Lucis</h3>
+                    <span class="calendar-abbr">A.L.</span>
+                </div>
+                <div class="calendar-year" id="AL-year">----</div>
+                <div class="calendar-date" id="AL-date">--/--/----</div>
+                <p class="calendar-description">In the Year of Light - Dating from the creation of the world according to Masonic tradition</p>
+                <div class="pillar-decoration left-pillar"></div>
+            </div>
+
+            <div class="calendar-card card" data-calendar="AM">
+                <div class="card-header">
+                    <span class="calendar-symbol">🌍</span>
+                    <h3>Anno Mundi</h3>
+                    <span class="calendar-abbr">A.M.</span>
+                </div>
+                <div class="calendar-year" id="AM-year">----</div>
+                <div class="calendar-date" id="AM-date">--/--/----</div>
+                <p class="calendar-description">In the Year of the World - Hebrew calendar calculation from the creation</p>
+                <div class="pillar-decoration right-pillar"></div>
+            </div>
+
+            <div class="calendar-card card" data-calendar="AI">
+                <div class="card-header">
+                    <span class="calendar-symbol">🔍</span>
+                    <h3>Anno Inventionis</h3>
+                    <span class="calendar-abbr">A.I.</span>
+                </div>
+                <div class="calendar-year" id="AI-year">----</div>
+                <div class="calendar-date" id="AI-date">--/--/----</div>
+                <p class="calendar-description">In the Year of Discovery - Commemorating the recovery of the lost word</p>
+                <div class="pillar-decoration left-pillar"></div>
+            </div>
+
+            <div class="calendar-card card" data-calendar="ADep">
+                <div class="card-header">
+                    <span class="calendar-symbol">🏛️</span>
+                    <h3>Anno Depositionis</h3>
+                    <span class="calendar-abbr">A.Dep.</span>
+                </div>
+                <div class="calendar-year" id="ADep-year">----</div>
+                <div class="calendar-date" id="ADep-date">--/--/----</div>
+                <p class="calendar-description">In the Year of the Deposit - From the laying of the foundation stone</p>
+                <div class="pillar-decoration right-pillar"></div>
+            </div>
+
+            <div class="calendar-card card" data-calendar="AO">
+                <div class="card-header">
+                    <span class="calendar-symbol">⚔️</span>
+                    <h3>Anno Ordinis</h3>
+                    <span class="calendar-abbr">A.O.</span>
+                </div>
+                <div class="calendar-year" id="AO-year">----</div>
+                <div class="calendar-date" id="AO-date">--/--/----</div>
+                <p class="calendar-description">In the Year of the Order - Knights Templar founding (1118 CE)</p>
+                <div class="pillar-decoration left-pillar"></div>
+            </div>
+
+            <div class="calendar-card card" data-calendar="AB">
+                <div class="card-header">
+                    <span class="calendar-symbol">✨</span>
+                    <h3>Anno Benefacio</h3>
+                    <span class="calendar-abbr">A.B.</span>
+                </div>
+                <div class="calendar-year" id="AB-year">----</div>
+                <div class="calendar-date" id="AB-date">--/--/----</div>
+                <p class="calendar-description">In the Year of the Blessing - Scottish Rite calendar</p>
+                <div class="pillar-decoration right-pillar"></div>
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            <div class="footer-symbols">
+                <span>∴</span>
+                <span>△</span>
+                <span>□</span>
+                <span>◯</span>
+            </div>
+            <p>Ordo ab Chao • Light in the Darkness • So Mote It Be</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

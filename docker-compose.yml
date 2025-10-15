@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  masonic-time:
+    build: .
+    container_name: masonic-time
+    restart: unless-stopped
+    ports:
+      - "5005:5005"
+    environment:
+      - NODE_ENV=production
+      - PORT=5005
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
