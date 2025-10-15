@@ -14,6 +14,10 @@ A beautiful web application that displays the current time in six different Maso
 
 ---
 
+Actual Human who deserves credit for building backend, the rest of this is AI generated:
+https://github.com/mapineda/masonic-time
+
+
 ## ✨ Features
 
 - 🕐 **Real-time Clock Display** - Live updating time in Gregorian and Masonic formats
